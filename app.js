@@ -29,6 +29,7 @@ cS1.addEventListener('transitionend',() => {
         counter = csI.length -2;
         cS1.style.transform = `translateX(`+(-size * counter) + `px)`;
     }
+    
     if (csI[counter].id == "firstImg") {
         cS1.style.transition = `none`;
         counter = csI.length - counter;
