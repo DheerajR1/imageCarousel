@@ -15,7 +15,7 @@ nextBtn.addEventListener('click', () => {
     counter++;
     cS1.style.transform = `translateX(`+(-size * counter) + `px)`;
 });
-
+  
 prevBtn.addEventListener('click', () => {
     if (counter <= 0) return;
     cS1.style.transition = "transform 0.4s ease-in-out";
@@ -29,7 +29,7 @@ cS1.addEventListener('transitionend',() => {
         counter = csI.length -2;
         cS1.style.transform = `translateX(`+(-size * counter) + `px)`;
     }
-    
+
     if (csI[counter].id == "firstImg") {
         cS1.style.transition = `none`;
         counter = csI.length - counter;
